@@ -84,7 +84,7 @@ public class UI {
         choice1.setFont(normalFont);
         choice1.setFocusPainted(false);
         choice1.addActionListener(cHandler);
-        choice1.setActionCommand("start");
+        choice1.setActionCommand("c1");
         choiceButtonPanel.add(choice1);
 
         choice2 = new JButton("Choice 2");
@@ -93,7 +93,7 @@ public class UI {
         choice2.setFont(normalFont);
         choice2.setFocusPainted(false);
         choice2.addActionListener(cHandler);
-        choice2.setActionCommand("start");
+        choice2.setActionCommand("c2");
         choiceButtonPanel.add(choice2);
 
         choice3 = new JButton("Choice 3");
@@ -102,7 +102,7 @@ public class UI {
         choice3.setFont(normalFont);
         choice3.setFocusPainted(false);
         choice3.addActionListener(cHandler);
-        choice3.setActionCommand("start");
+        choice3.setActionCommand("c3");
         choiceButtonPanel.add(choice3);
 
         choice4 = new JButton("Choice 4");
@@ -111,7 +111,7 @@ public class UI {
         choice4.setFont(normalFont);
         choice4.setFocusPainted(false);
         choice4.addActionListener(cHandler);
-        choice4.setActionCommand("start");
+        choice4.setActionCommand("c4");
         choiceButtonPanel.add(choice4);
 
         playerPanel = new JPanel();

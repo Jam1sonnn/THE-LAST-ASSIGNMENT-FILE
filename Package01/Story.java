@@ -44,6 +44,14 @@ public class Story {
             case "north": north(); break;
             case "east": east(); break;
             case "west": west(); break;
+            case "Fight": Fight(); break;
+            case "Win": Win(); break;
+            case "Lose": Lose(); break;
+            case "Ending": Ending(); break;
+            case "playerAttack": playerAttack(); break;
+            case "monsterAttack": monsterAttack(); break;
+            case "toTitle": toTitle(); break;
+
 
         }
     }
@@ -77,7 +85,7 @@ public class Story {
         }
         else if (silverRing == 1){
 
-            ending();
+            Ending();
 
         }
         ui.mainTextArea.setText("Zombie: RAHHH DUHHH (He's a ZOMBIE clown dummy)");
@@ -106,6 +114,14 @@ public class Story {
         game.nextPosition2 = "";
         game.nextPosition3 = "";
         game.nextPosition4 = "";
+
+        if(player.hp < 1){
+            game.nextPosition1 = "Lose";
+            game.nextPosition2 = "";
+            game.nextPosition3 = "";
+            game.nextPosition4 = "";
+
+        }
     }
 
     public void crossRoad(){
@@ -185,7 +201,7 @@ public class Story {
         game.nextPosition4 = "";
     }
 
-    public void playetAttack(){
+    public void playerAttack(){
 
         int playerDamage = new java.util.Random().nextInt(player.currentWeapon.damage);
 
@@ -272,7 +288,7 @@ public class Story {
             game.nextPosition4 = "";
     }
 
-    public void ending(){
+    public void Ending(){
 
         ui.mainTextArea.setText("You have cleared the park of its curse. \nYou will forever be a hero!");
 
