@@ -128,7 +128,7 @@ public class Story {
     }
 
     public void attackClown() {
-        ui.mainTextArea.setText("UGHHH! (He attacked you and you gave up. \n (You recieve 3 damage))");
+        ui.mainTextArea.setText("UGHHH! \n(He attacked you and you gave up). \n(You recieve 3 damage)");
         player.hp = player.hp - 3;
         ui.hpNumberLabel.setText("" + player.hp);
         ui.choice1.setText(">");
@@ -165,7 +165,7 @@ public class Story {
     }
 
     public void north() {
-        ui.mainTextArea.setText("You stumble across a game booth. \nYou find a candy bar and restore 2 HP!");
+        ui.mainTextArea.setText("You stumble across a game booth. \nThere was a candy bar inside! \n\n(You gained 2 HP)");
         player.hp = player.hp + 2;
         ui.hpNumberLabel.setText("" + player.hp);
         ui.choice1.setText("Go South");
@@ -297,7 +297,7 @@ public class Story {
     public void Win() {
 
         ui.mainTextArea.setText(
-                "You've defeated the " + monster.name + "\nThey dropped a ring!\n\n(You obtained a Silver Ring)");
+                "You've defeated the " + monster.name + "\nThey dropped a ring!\n\n(You obtained a Silver Ring).\n\nGo back to the clown.");
 
         silverRing = 1;
 
@@ -316,7 +316,7 @@ public class Story {
 
         ui.mainTextArea.setText("You are dead! \n\nGAME OVER!");
 
-        ui.choice1.setText("To the title screen");
+        ui.choice1.setText("Retry?");
         ui.choice2.setText("");
         ui.choice3.setText("");
         ui.choice4.setText("");

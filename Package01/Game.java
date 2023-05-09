@@ -9,6 +9,7 @@ public class Game {
     UI ui = new UI();
     VM vm = new VM(ui);
     Story story = new Story(this, ui, vm);
+    
 
     String nextPosition1, nextPosition2, nextPosition3, nextPosition4;
 
