@@ -7,5 +7,4 @@ public class weaponSword extends yourWeapon {
         name = "Sword";
         damage = 12;
     }
-    
 }

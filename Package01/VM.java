@@ -3,13 +3,13 @@ package Package01;
 public class VM {
 
     UI ui;
-    
-    public VM(UI userInterface){
+
+    public VM(UI userInterface) {
 
         ui = userInterface;
     }
 
-    public void showTitleScreen(){
+    public void showTitleScreen() {
 
         // Show the Title Screen
         ui.titleNamePanel.setVisible(true);
@@ -21,7 +21,7 @@ public class VM {
         ui.playerPanel.setVisible(false);
     }
 
-    public void titleToPark(){
+    public void titleToPark() {
 
         // Hide the Title Screen
         ui.titleNamePanel.setVisible(false);
