@@ -23,7 +23,7 @@ public class Story {
         vm = vManager;
 
     }
-
+    // Default player values
     public void defaultSetup() {
 
         player.hp = 10;
@@ -37,6 +37,7 @@ public class Story {
 
     public void selectPosition(String nextPosition) {
 
+        // Position Manager
         switch (nextPosition) {
             case "parkGate":
                 parkGate();
@@ -85,6 +86,7 @@ public class Story {
         }
     }
 
+    // Main Story 
     public void parkGate() {
         ui.mainTextArea.setText(
                 "You are at the entrance to the park. \nA zombie clown is standing in front of you. \n\nWhat do you do?");

@@ -32,6 +32,7 @@ public class Game {
 
             String yourChoice = event.getActionCommand();
 
+            // Position Manager 
             switch (yourChoice) {
                 case "start":
                     vm.titleToPark();

@@ -30,6 +30,7 @@ public class UI {
         window.setSize(800, 600);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.getContentPane().setBackground(Color.BLACK);
+        window.setResizable(false);
         window.setLayout(null);
 
         // Title Screen
